@@ -3,5 +3,10 @@ git:
 language: java
 jdk:
   - oraclejdk11
+services:
+  - postgresql
+before_script:
+  - psql -c 'create database spring;' -U postgres
+  - psql -c 'create table factura(numero int primary key, concepto character varying(5), importe numeric)'
 #before_install:
 #  - chmod +x ./mvnw
