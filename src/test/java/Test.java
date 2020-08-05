@@ -26,7 +26,7 @@ public class Test {
      
     @org.junit.Test
     public void buscarUna(){
-        assertEquals("Ropa", dependency.buscarUna(4).getConcepto());      
+        assertEquals("Ropa", dependency.buscarUna(1).getConcepto());      
     }
     
     @org.junit.Test
