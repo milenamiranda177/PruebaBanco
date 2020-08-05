@@ -7,6 +7,6 @@ services:
   - postgresql
 before_script:
   - psql -c 'create database spring;' -U postgres
-  - psql -c 'create table factura(numero int primary key, concepto character varying(5), importe numeric)'
+  - psql -c 'create table factura(numero int primary key, concepto character varying(5), importe numeric);' -U postgres
 #before_install:
 #  - chmod +x ./mvnw
