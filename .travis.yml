@@ -3,8 +3,5 @@ git:
 language: java
 jdk:
   - oraclejdk11
-script: 
-   - sudo mvn clean package
-   - sudo mvn install
 #before_install:
 #  - chmod +x ./mvnw
